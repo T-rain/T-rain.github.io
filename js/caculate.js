@@ -41,7 +41,7 @@ $(document).ready(function(){
     $(this).click(function(){
 
         textNumber = $("#result").text().length;
-        if(textNumber < 16){
+        if(textNumber < 15){
           if(currentText != 0){
             currentText += $(this).attr('id');
             $("#result").text(currentText);
@@ -111,7 +111,7 @@ $(document).ready(function(){
 
     textNumber = consult.toString().length;
 
-    if(textNumber<16){
+    if(textNumber<15){
       
       $("#result").text(consult);
     }else{
