@@ -2,11 +2,65 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
-
+  <link href="style/caculate.css" rel="stylesheet">
+  <!--<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/caculate.js"></script>
   <title>Caculate</title>
 
 </head>
 <body>
-  
+  <div id="caculator">
+    
+    <div class="divpad" >
+        <p id="result">0</p>
+    </div>
+    <div class="divpad">
+       <button class="btncss" id="btnac">AC</button>
+    </div>
+
+    <div>
+      <div style="float:left;">
+        <div class="divpad">
+          <button class="btncss btnnum" id="7">7</button>
+          <button class="btncss btnnum" id="8">8</button>
+          <button class="btncss btnnum" id="9">9</button>
+        </div>
+        <div class="divpad">
+          <button class="btncss btnnum" id="4">4</button>
+          <button class="btncss btnnum" id="5">5</button>
+          <button class="btncss btnnum" id="6">6</button>
+        </div>
+        <div class="divpad">
+          <button class="btncss btnnum" id="1">1</button>
+          <button class="btncss btnnum" id="2">2</button>
+          <button class="btncss btnnum" id="3">3</button>
+        </div>
+        <div class="divpad">
+          <button class="btncss btnnum" id="0">0</button> 
+          <button class="btncss " id="btnc">C</button>
+          <button class="btncss " id="btneql">=</button>
+        </div>
+      </div>
+
+      <div style="float: left;">
+        <div class="divpad">
+          <button class="btncss" id="btnadd">+</button>
+        </div>
+        <div class="divpad">
+          <button class="btncss" id="btnsub">-</button>
+        </div>
+        <div class="divpad">
+          <button class="btncss" id="btnmul">*</button>
+        </div>
+        <div class="divpad">
+          <button class="btncss" id="btndiv">/</button>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
 </body>
 </html>
