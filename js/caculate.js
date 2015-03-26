@@ -15,39 +15,63 @@
   //$("message").text()
 
 $(document).ready(function(){
+  /*
+  var testNumLength = function(number) {
+      if (number.length > 9) {
+          totaldiv.text(number.substr(number.length-9,9));
+          if (number.length > 15) {
+              number = "";
+              totaldiv.text("Err");
+          }
+      } 
+      */
 
   var currentText = "";
   var consult = 0;
   var operator = 0;
+  var textNumber;
 
-  $("")
+
+
+
+ 
 
   $("button.btnnum").each(function(){
 
     $(this).click(function(){
 
-      if(currentText != 0){
-        currentText += $(this).attr('id');
-        $("#result").text(currentText);
+        textNumber = $("#result").text().length;
+        if(textNumber < 16){
+          if(currentText != 0){
+            currentText += $(this).attr('id');
+            $("#result").text(currentText);
 
-      }else{
-        currentText = $(this).attr('id');
-        $("#result").text(currentText);
-      }
+          }else{
+            currentText = $(this).attr('id');
+            $("#result").text(currentText);
+          }
 
 
-      if(operator == 5){
-        consult = 0;
-        operator = 0;
-      }
+          if(operator == 5){
+            consult = 0;
+            operator = 0;
+          }
+        }
+        
+
+        
+
+
 
     });
   });
 
   $("#btnc").on("click",function(){
-    clearUp();
-    //$("#result").text(0);
+      clearUp();
   });
+    //
+    //$("#result").text(0);
+  
 
   $("#btnac").on("click",function(){
     operator = 0;
@@ -81,19 +105,38 @@ $(document).ready(function(){
   $("#btneql").on("click",function(){
 
     caculate(operator);
-    $("#result").text(consult);
+    consult=Math.round(consult * 10000) / 10000;
+
+    //alert(consult);
+
+    textNumber = consult.toString().length;
+
+    if(textNumber<16){
+      
+      $("#result").text(consult);
+    }else{
+
+
+      alert("ERROR");
+      consult = 0 ;
+      $("#result").text(consult);
+    }
+
+    
     operator = 5;
 
   });
 
   function caculate(ope){
 
+      
+
       var tmp;
       //判斷輸入數字
       if(currentText != ""){
           tmp = parseInt(currentText);
       }else{
-        tmp = 0;
+          tmp = 0;
       }
 
 
@@ -129,6 +172,7 @@ $(document).ready(function(){
             
           case 1:
             consult += tmp;
+
             //alert("addconsult:"+consult);
             
             break;
