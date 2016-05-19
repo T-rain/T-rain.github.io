@@ -1,0 +1,24 @@
+.bg-self{
+
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+
+
+}
+
+
+.bg-choose
+{
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-1
+{
+    /*
+    background-color: #989898;
+    color: #F8F8F8;
+    */
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
