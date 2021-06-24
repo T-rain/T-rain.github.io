@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	 <div id="container">
+        
+            
+    <section class="searchBox">
+    <div class="searchBoxInput form-inline">
+        <input type="text" value="" name="keywords" id="keywords" placeholder="請輸入關鍵字（社區、街道、商圈等...）" data-text="請輸入關鍵字（社區、街道、商圈等...）"
+            autocomplete="off" class="searchInput form-control">
+        <i style="">
+            <ul id="localCookies"></ul>
+        </i>
+        <span class="searchBtn" aria-hidden="true" google-data-stat="新版出租_列表_搜寻按钮"></span>
+        <i class="searchBtn" aria-hidden="true"></i>
+
+        
+                    <ul class="hotWords clearfix">
+                <li class="first"><strong style="color: #2e3436 ">商用地產：</strong></li>
+                <li class="first" google-data-stat="新版出租_列表_引導店面"><a  href="//business.591.com.tw?type=1&kind=5&businessSort=1"  target="_blank">店面</a></li>
+                <li class="first"  google-data-stat="新版出租_列表_引導辦公"><a  href="//business.591.com.tw?type=1&kind=6&businessSort=1"  target="_blank">辦公</a></li>
+                <li class="first" google-data-stat="新版出租_列表_引導住辦"><a href="//business.591.com.tw?type=1&kind=12&businessSort=1"  target="_blank">住辦</a></li>
+                <li class="first" google-data-stat="新版出租_列表_引導廠房"><a href="//business.591.com.tw?type=1&kind=7&businessSort=1"  target="_blank">廠房</a></li>
+            </ul>
+
+            <div class="aLink">
+                <span class="mapLink">
+                    <a href="//rent.591.com.tw/map-index.html" target="_blank" google-data-stat="新版出租_列表_地圖找房">地圖找房</a>
+                </span>
+
+                <span class="social" style="display:none">
+                    <a href="//rent.591.com.tw/home/social" target="_blank"
+                        google-data-stat="新版出租_列表_社會住宅專區">社會住宅專區</a>
+                </span>
+            </div>
+            </div>
+</section>
+
+    <div id="header-dealer">
+        <div id="UNION_22" class="union_responsive"></div>
+    </div>
+
+    <!--麵包屑-->
+    <section class="breadBox">
+        <div class="breadNav clearfix">
+            <div class="breadList" id="breadList">
+                <a href="//www.591.com.tw" google-data-stat="新版出租_列表_591面包屑">591</a>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;
+                <a href="//rent.591.com.tw/" google-data-stat="新版出租_列表_新版面包屑">出租</a>
+            </div>
+            <div class="conditionShow clearfix"></div>
+            <a href="javascript:;" class="pull-right" id="epaper" google-data-stat="新版_列表_訂閱電子報" >&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;&nbsp;訂閱電子報</a>
+            <a href="javascript:;" class="pull-right" id="clearAll"><i class="fa fa-trash-o" aria-hidden="true"></i> 清除全部</a>
+        </div>
+    </section>
+
+    <!--條件篩選-->
+    <section class="conditionBox">
+        <section class="condition">
+            <!--位置-->
+            <!--位置-->
+<div id="search-location">
+    <strong>位置：</strong>
+    <span class="search-location-span " data-ie="search-location-span" data-index="1" google-data-stat="新版出租_列表_按縣市選擇">
+        花蓮縣&nbsp;&nbsp;
+            <i class="search-location-angle fa fa-angle-down"></i>
+    </span> 
+    <span class="search-location-span select" data-ie="search-location-span" data-index="2" google-data-stat="新版出租_列表_按鄉鎮選擇">
+        按鄉鎮選擇&nbsp;&nbsp;
+            <i class="search-location-angle fa fa-angle-down"></i>
+    </span> 
+     <span class="search-location-span " data-ie="search-location-span" data-index="3" google-data-stat="新版出租_列表_按捷運選擇">
+        按捷運選擇&nbsp;&nbsp;
+            <i class="search-location-angle fa fa-angle-down"></i>
+    </span> 
+     <span class="search-location-span " data-ie="search-location-span" data-index="4" google-data-stat="新版出租_列表_按學校選擇">
+        按學校選擇&nbsp;&nbsp;
+            <i class="search-location-angle fa fa-angle-down"></i>
+    </span> 
+     <span class="search-location-span " data-ie="search-location-span" data-index="5" google-data-stat="新版出租_列表_按商圈選擇">
+        按商圈選擇&nbsp;&nbsp;
+            <i class="search-location-angle fa fa-angle-down"></i>
+    </span> 
+</div>            <!--县市 乡镇 捷运 学校 商圈-->
+            <ul id="optionBox" id="areabox" class="clearfix"></ul>
+            <ul id="optionBoxs"class="clearfix"></ul>
+            <!--类型-->
+            <div id="search-kind" class="search-condition">
+    <strong>類型：</strong>
+        <span class="search-rentType-span search-unlimit" data-ie="search-rentType-span" data-index="0" google-data-stat="新版出租_列表_不限" data-name="rentType">
+        不限
+        </span>
+        <span class="search-rentType-span" data-ie="search-rentType-span" data-index="1" google-data-stat="新版出租_列表_整層住家" data-name="rentType">
+        整層住家
+        </span>
+        <span class="search-rentType-span" data-ie="search-rentType-span" data-index="2" google-data-stat="新版出租_列表_獨立套房" data-name="rentType">
+        獨立套房
+        </span><span class="search-rentType-span" data-ie="search-rentType-span" data-index="3" google-data-stat="新版出租_列表_分租套房" data-name="rentType">
+        分租套房
+        </span><span class="search-rentType-span" data-ie="search-rentType-span" data-index="4" google-data-stat="新版出租_列表_雅房" data-name="rentType">
+        雅房
+        </span><span class="search-rentType-span" data-ie="search-rentType-span" data-index="8" google-data-stat="新版出租_列表_車位" data-name="rentType">
+        車位
+        </span><span class="search-rentType-span" data-ie="search-rentType-span" data-index="24" google-data-stat="新版出租_列表_其他" data-name="rentType">
+        其他
+        </span>
+</div>            <!--租金-->
+            <div id="search-price" class="search-condition rentPrice">
+    <strong>租金：</strong>
+        <span class="search-rentPrice-span search-unlimit" data-ie="search-rentPrice-span" data-index="0" google-data-stat="新版出租_列表_租金不限" data-name="rentPrice">
+        不限
+        </span>
+        <span class="search-rentPrice-span" data-ie="search-rentPrice-span" data-index="1" google-data-stat="新版出租_列表_5000元以下" data-name="rentPrice">
+        5000元以下
+        </span>
+        <span class="search-rentPrice-span" data-ie="search-rentPrice-span" data-index="2" google-data-stat="新版出租_列表_5000-10000元" data-name="rentPrice">
+        5000-10000元
+        </span><span class="search-rentPrice-span" data-ie="search-rentPrice-span" data-index="3" google-data-stat="新版出租_列表_10000-20000元" data-name="rentPrice">
+        10000-20000元
+        </span><span class="search-rentPrice-span" data-ie="search-rentPrice-span" data-index="4" google-data-stat="新版出租_列表_20000-30000元" data-name="rentPrice">
+        20000-30000元
+        </span><span class="search-rentPrice-span" data-ie="search-rentPrice-span" data-index="5" google-data-stat="新版出租_列表_30000-40000元" data-name="rentPrice">
+        30000-40000元
+        </span><span class="search-rentPrice-span" data-ie="search-rentPrice-span" data-index="6" google-data-stat="新版出租_列表_40000-60000元" data-name="rentPrice">
+        40000-60000元
+        </span><span class="search-rentPrice-span" data-ie="search-rentPrice-span" data-index="7" google-data-stat="新版出租_列表_60000元以上" data-name="rentPrice">
+        60000元以上
+        </span>
+
+        <sapn class="search-input-span">
+            <input type="text" class="rentPrice-min  search-input-info" id="rentPrice-min" data-name="rentPrice">&nbsp;-&nbsp;
+            <input type="text" class="rentPrice-max  search-input-info" id="rentPrice-max" data-name="rentPrice">&nbsp;元&nbsp;&nbsp;
+            <input class="search-input-btn rentPrice-btn" data-ie="search-input-btn" type="button" value="確定" google-data-stat="新版出租_列表_自定义金额" data-name="rentPrice">
+        </sapn>
+
+        <span class="search-change-more" data-ie="search-change-more" data-name="rentpriceMore">多選</span>        
+</div>            <!--格局-->
+            <div id="search-pattern" class="search-condition">
+    <strong>格局：</strong>
+        <span class="search-pattern-span search-unlimit" data-ie="search-pattern-span" data-index="0" google-data-stat="新版出租_列表_格局不限" data-name="pattern">
+        不限
+        </span>
+        <span class="search-pattern-span" data-ie="search-pattern-span" data-ie="search-pattern-span" data-index="1" google-data-stat="新版出租_列表_1房" data-name="pattern">
+        1房
+        </span>
+        <span class="search-pattern-span" data-ie="search-pattern-span" data-index="2" google-data-stat="新版出租_列表_2房" data-name="pattern">
+        2房
+        </span>
+        <span class="search-pattern-span" data-ie="search-pattern-span" data-index="3" google-data-stat="新版出租_列表_3房" data-name="pattern">
+        3房
+        </span>
+        <span class="search-pattern-span" data-ie="search-pattern-span" data-index="4" google-data-stat="新版出租_列表_4房" data-name="pattern">
+        4房
+        </span>
+        <span class="search-pattern-span" data-ie="search-pattern-span" data-index="5" google-data-stat="新版出租_列表_5房以上" data-name="pattern">
+        5房以上
+        </span>
+        
+        <span class="search-change-more" data-ie="search-change-more" data-name="rentpatternMore">多選</span>    
+</div>
+            <!--坪數-->
+            <div id="search-plain" class="search-condition">
+    <strong>坪數：</strong>
+        <span class="search-plain-span search-unlimit" data-ie="search-plain-span" data-index="0,0" google-data-stat="新版出租_列表_坪數不限" data-name="plain">
+        不限
+        </span>
+        
+        <span class="search-plain-span" data-ie="search-plain-span" data-index="0,10" google-data-stat="新版出租_列表_10坪以下" data-name="plain">
+        10坪以下
+        </span>
+        <span class="search-plain-span" data-ie="search-plain-span" data-index="10,20" google-data-stat="新版出租_列表_10-20坪" data-name="plain">
+        10-20坪
+        </span>
+        <span class="search-plain-span" data-ie="search-plain-span" data-index="20,30" google-data-stat="新版出租_列表_20-30坪" data-name="plain">
+        20-30坪
+        </span>
+        <span class="search-plain-span" data-ie="search-plain-span" data-index="30,40" google-data-stat="新版出租_列表_30-40坪" data-name="plain">
+        30-40坪
+        </span>
+        <span class="search-plain-span" data-ie="search-plain-span" data-index="40,50" google-data-stat="新版出租_列表_40-50坪" data-name="plain">
+        40-50坪
+        </span>
+        <span class="search-plain-span" data-ie="search-plain-span" data-index="50," google-data-stat="新版出租_列表_50坪以上" data-name="plain">
+        50坪以上
+        </span>
+
+
+        <sapn class="search-input-span">
+            <input type="text" class="plain-min  search-input-info" id="plain-min" data-name="plain">&nbsp;-&nbsp;
+            <input type="text" class="plain-max  search-input-info" id="plain-max" data-name="plain">&nbsp;坪&nbsp;&nbsp;
+            <input class="search-input-btn plain-btn" data-ie="search-input-btn" type="button" value="確定" google-data-stat="新版出租_列表_自定义金额" data-name="plain">
+        </sapn>
+
+</div>
+
+            <div class="searchMore">
+                <strong>更多條件：</strong>
+                <div class="btn-group shape" id="rentShape">
+    <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        房屋型態 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu shapeList">
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_房屋型態公寓">
+                <label data-index="1"  data-name="shape">
+                    <input class="search-dropdown-shape" data-ie="search-dropdown-shape" type="checkbox" value="1" data-index="1" id="shape-1" data-name="shape"> 
+                    <em>公寓</em>
+                </label>
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_房屋型態電梯大樓">
+                <label data-index="2"  data-name="shape">
+                    <input class="search-dropdown-shape" data-ie="search-dropdown-shape" type="checkbox" value="1" data-index="2" id="shape-2" data-name="shape"> 
+                    <em>電梯大樓</em>
+                </label>
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_房屋型態透天厝">
+                <label data-index="3"  data-name="shape">
+                    <input class="search-dropdown-shape" data-ie="search-dropdown-shape" type="checkbox" value="1" data-index="3" id="shape-3" data-name="shape"> 
+                    <em>透天厝</em>
+                </label>
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_房屋型態別墅">
+                <label data-index="4"  data-name="shape">
+                    <input class="search-dropdown-shape" data-ie="search-dropdown-shape" type="checkbox" value="1" data-index="4" id="shape-4" data-name="shape"> 
+                    <em>別墅</em>
+                </label>
+            </a>
+        </li>
+
+    </ul>
+</div>
+                <div class="btn-group floor" id="rentFloor">
+    <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        樓層 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu floorList">
+        <li><a class="search-dropdown-floor search-unlimit" data-ie="search-dropdown-floor" data-index="0,0"  data-name="floor" href="javascript:;" google-data-stat=" 新版出租  _列表_樓層不限">不限</a></li>    
+
+        <li><a class="search-dropdown-floor" data-ie="search-dropdown-floor" data-index="0,1"  data-name="floor" href="javascript:;" google-data-stat=" 新版出租  _列表_1層">1層</a></li>    
+        <li><a class="search-dropdown-floor" data-ie="search-dropdown-floor" data-index="2,6"  data-name="floor" href="javascript:;" google-data-stat=" 新版出租  _列表_2-6層">2-6層</a></li>    
+        <li><a class="search-dropdown-floor" data-ie="search-dropdown-floor" data-index="6,12"  data-name="floor" href="javascript:;" google-data-stat=" 新版出租  _列表_6-12層">6-12層</a></li>    
+        <li><a class="search-dropdown-floor" data-ie="search-dropdown-floor" data-index="12,"  data-name="floor" href="javascript:;" google-data-stat=" 新版出租  _列表_12層以上">12層以上</a></li>    
+        
+    </ul>
+</div>
+                <div class="btn-group sex" id="rentSex">
+    <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        性別 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu sexList">
+        <li><a class="search-dropdown-sex search-unlimit" data-ie="search-dropdown-sex" data-index="0"  data-name="sex" href="javascript:;" google-data-stat="新版出租_列表_性別不限">不限</a></li>
+
+        <li><a class="search-dropdown-sex" data-ie="search-dropdown-sex" data-index="3"  data-name="sex" href="javascript:;" google-data-stat="新版出租_列表_男女皆可">男女皆可</a></li>
+
+        <li><a class="search-dropdown-sex" data-ie="search-dropdown-sex" data-index="1"  data-name="sex" href="javascript:;" google-data-stat="新版出租_列表_男">男</a></li>
+
+        <li><a class="search-dropdown-sex" data-ie="search-dropdown-sex" data-index="2"  data-name="sex" href="javascript:;" google-data-stat="新版出租_列表_女">女</a></li>
+    </ul>
+</div>                <div class="btn-group option" id="rentOption">
+    <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        提供設備 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu shapeList">
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_有電視">
+                <label data-index="tv"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="tv" id="option-tv" data-name="option">
+                    <em>有電視</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_有冷氣">
+                <label data-index="cold"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="cold" id="option-cold" data-name="option">
+                    <em>有冷氣</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_有冰箱">
+                <label data-index="icebox"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="icebox" id="option-icebox" data-name="option">
+                    <em>有冰箱</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_有熱水器">
+                <label data-index="hotwater"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="hotwater" id="option-hotwater" data-name="option">
+                    <em>有熱水器</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_有天然瓦斯">
+                <label data-index="naturalgas"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="naturalgas" id="option-naturalgas" data-name="option">
+                    <em>有天然瓦斯</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_有第四台">
+                <label data-index="tvfour"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="four" id="option-four" data-name="option">
+                    <em>有第四台</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_有網絡">
+                <label data-index="broadband"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="broadband" id="option-broadband" data-name="option">
+                    <em>有網絡</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_有洗衣機">
+                <label data-index="washer"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="washer" id="option-washer" data-name="option">
+                    <em>有洗衣機</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_床">
+                <label data-index="bed"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="bed" id="option-bed" data-name="option">
+                    <em>床</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_衣櫃">
+                <label data-index="wardrobe"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="wardrobe" id="option-wardrobe" data-name="option">
+                    <em>衣櫃</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat="新版出租_列表_沙發">
+                <label data-index="sofa"  data-name="option">
+                    <input class="search-dropdown-option" data-ie="search-dropdown-option" type="checkbox" value="1" data-index="sofa" id="option-sofa" data-name="option">
+                    <em>沙發</em>
+                </label>
+            </a>
+        </li>
+    </ul>
+</div>                <div class="btn-group other" id="rentOther">
+    <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        其他條件 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu shapeList">
+    
+        <li>
+            <a href="javascript:;" google-data-stat=" 新版出租  _列表_其他條件有車位">
+                <label data-index="cartplace"  data-name="other">
+                    <input class="search-dropdown-other" data-ie="search-dropdown-other" type="checkbox" value="1" data-index="cartplace" id="other-cartplace" data-name="other"> 
+                    <em>有車位</em>
+                </label>
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:;" google-data-stat=" 新版出租  _列表_其他條件有電梯">
+                <label data-index="lift"  data-name="other">
+                    <input class="search-dropdown-other" data-ie="search-dropdown-other" type="checkbox" value="1" data-index="lift" id="other-lift" data-name="other"> 
+                    <em>有電梯</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat=" 新版出租  _列表_其他條件有陽台">
+                <label data-index="balcony_1"  data-name="other">
+                    <input class="search-dropdown-other" data-ie="search-dropdown-other" type="checkbox" value="1" data-index="balcony_1" id="other-balcony_1" data-name="other"> 
+                    <em>有陽台</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat=" 新版出租  _列表_其他條件可開火">
+                <label data-index="cook"  data-name="other">
+                    <input class="search-dropdown-other" data-ie="search-dropdown-other" type="checkbox" value="1" data-index="cook" id="other-cook" data-name="other"> 
+                    <em>可開伙</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat=" 新版出租  _列表_其他條件可養寵物">
+                <label data-index="pet"  data-name="other">
+                    <input class="search-dropdown-other" data-ie="search-dropdown-other" type="checkbox" value="1" data-index="pet" id="other-pet" data-name="other"> 
+                    <em>可養寵物</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat=" 新版出租  _列表_其他條件近捷運">
+                <label data-index="tragoods"  data-name="other">
+                    <input class="search-dropdown-other" data-ie="search-dropdown-other" type="checkbox" value="1" data-index="tragoods" id="other-tragoods" data-name="other"> 
+                    <em>近捷運</em>
+                </label>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" google-data-stat=" 新版出租  _列表_其他條件可短期租賃">
+                <label data-index="lease"  data-name="other">
+                    <input class="search-dropdown-other" data-ie="search-dropdown-other" type="checkbox" value="1" data-index="lease" id="other-lease" data-name="other"> 
+                    <em>可短期租賃</em>
+                </label>
+            </a>
+        </li>
+
+    </ul>
+</div>
+                <ul class="search-more-ul">
+                    <li>
+                        <label data-index="1" data-name="hasimg">
+                            <input class="search-more-hasimg" data-ie="search-more-hasimg" data-index="1" data-name="hasimg" data-text="有房屋圖片" type="checkbox"> 有房屋圖片
+                        </label>
+                    </li>
+                    <li>
+                        <label data-index="1" data-name="not_cover">
+                            <input class="search-more-not_cover" data-ie="search-more-not_cover" data-index="1" data-name="not_cover" data-text="排除頂樓加蓋" type="checkbox"> 排除頂樓加蓋
+                        </label>
+                    </li>
+                    <li>
+                        <label data-index="1" data-name="role">
+                            <input class="search-more-role" data-ie="search-more-role" data-index="1" data-name="role" data-text="屋主刊登" type="checkbox"> 屋主刊登
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <!--條件篩選結束-->
+
+    
+    <section class="choicenessBox  z-init-1">
+    <div class="choiceness">
+        <h4>精選推薦<span class="pull-right"><a href="//www.591.com.tw/help-choice.html" target="_blank"  google-data-stat="新版出租_列表_我也要出現在這裡">我也要出現在這裡 <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></h4>
+        <div class="outBox">
+            <div class="articleList " style="height: 298px">
+                <ul class="articleListBox clearfix" id="articleListBox" style="height: 257px">
+
+                </ul>
+
+            </div>
+            <a class="arrow-left" href="javascript:;" google-data-stat="新版出租_列表_圖片左切換"></a>
+            <a class="arrow-right" href="javascript:;" google-data-stat="新版出租_列表_圖片右切換"></a>
+        </div>
+    </div>
+</section>
+
+<script type="text/html" id="articleListTpl">
+    <@ for (s = 0; s< topData.length; s ++) { @>
+    <li
+    <@ if((s+1)%5 == 0 && s != 0){ @>
+    class="last"
+    <@ } @>
+    >
+    <div class="recomonepx" data-id="<@=topData[s]['post_id'] @>">
+        <a  title="<@=topData[s]['address'] @>" href="  //rent.591.com.tw/<@=topData[s]['detail_url'] @>  " target="_blank" google-data-stat="新版出租_列表_精選推薦圖片">
+
+        <img src="<@=topData[s]['img_src'] @>" width="210" alt="<@=topData[s]['tilte'] @>" height="158" title="<@=topData[s]['tilte'] @>" isad=<@=topData[s]['isAd'] @>>
+
+        <@ if( topData[s]['photoNum'] > 0){ @>
+        <div class="imgSort">
+            <@=topData[s]['photoNum'] @>
+        </div>
+        <@ } @>
+        </a>
+        <p>
+            <a  title="<@=topData[s]['address'] @>" href="  //rent.591.com.tw/<@=topData[s]['detail_url'] @>  " target="_blank">
+
+            <@= topData[s]['address_2']@></a></p>
+        <p>
+
+            <@ if( topData[s]['section_str'] ){ @>
+            <span class="labelBox"><@=topData[s]['section_str'] @></span>
+            <@ } @>
+
+            <@ if( topData[s]['kind_str'] ){ @>
+            <span class="labelBox"><@=topData[s]['kind_str'] @></span>
+            <@ } @>
+
+            <@ if( topData[s]['area'] ){ @>
+            <span class="labelBox"><@=topData[s]['area'] @></span>
+            <@ } @>
+
+        </p>
+
+        <span><@=topData[s]['price']@></span> <@=topData[s]['price_unit']@>
+    </div>
+    </li>
+    <@ } @>
+
+    <@ if( topData.length < 4 ){ @>
+
+    <@ for( var i = 0; i < 5-topData.length; i++){ @>
+    <li class="defaultBox
+            <@ if(i == 5-topData.length-1 ){ @>
+            last
+            <@ } @>
+            "><a href="//www.591.com.tw/help-choice.html" target="_blank"></a></li>
+    <@ } @>
+    <@ } @>
+</script>
+
+    
+    <section class="listBox">
+        <div class="list clearfix">
+            <div class="listLeft">
+                <!--列表页切换-->
+                <ul class="listTips clearfix">
+                    <li class="select" data-text="list"><a href="javascript:;" class="30" google-data-stat="新版出租_列表_所有物件">所有物件</a></li>
+                    <li  data-text="host"><a href="javascript:;" google-data-stat="新版出租_列表_屋主">屋主</a></li>
+                    <li data-text="clinch"><a href="javascript:;" google-data-stat="新版出租_列表_已成交">已成交</a></li>
+                    <li data-text="social_house" class="social_entry" style="display:none"><a href="javascript:;" google-data-stat="新版出租_列表_社會住宅">社會住宅</a></li>
+
+                </ul>
+
+                <div class="ulLine"></div>
+
+                <!--未搜索到内容-->
+                <div class="noInfo clearfix ">
+                    <div class="pull-left noInfoTips"></div>
+                    <div class="pull-left remind">
+                        <h4>很抱歉，我們暫時沒有為您找到合適的物件！</h4>
+                        <p>建議您：重新搜尋試看看唷~</p>
+                    </div>
+                </div>
+
+                
+                <!--列表页排序--->
+<div class="listSort clearfix"  >
+
+        <div class="pull-left hasData">共找到<i> 215 </i>間房屋</div>
+        <div class="pull-left nearRecom">為您推薦</div>
+
+    <div class="sort pull-right clearfix">
+
+        <div class="btn-group orderSelect">
+            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <em>默認排序</em> <span class="fa fa-angle-down" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu orderSelectList">
+                <li class="selected"><a href="javascript:;" data-bind="refreshtime">默認更新時間排序</a></li>
+                <li ><a href="javascript:;"data-bind="area" data-text="desc">坪數從大到小</a></li>
+                <li ><a href="javascript:;"data-bind="area" data-text="asc">坪數從小到大</a></li>
+                                <li ><a href="javascript:;"data-bind="money" data-text="desc">金額從大到小</a></li>
+                <li><a href="javascript:;" data-bind="money" data-text="asc">金額從小到大</a></li>
+                <li style="display: none;"><a href="javascript:;" data-bind="arrow" data-text="desc">成交時間从慢到块</a></li>
+                <li style="display: none;"><a href="javascript:;" data-bind="arrow" data-text="asc">成交時間从快到慢</a></li>
+                <li><a href="javascript:;" data-bind="posttime" data-text="desc">刊登時間從新到舊</a></li>
+                <li><a href="javascript:;" data-bind="posttime" data-text="asc">刊登時間從舊到新</a></li>
+                <li style="display: none;"><a href="javascript:;" data-bind="nearby" data-text="desc">步行距離從近到遠</a></li>
+            </ul>
+        </div>
+        <div class="sortOther btn btn-default btn-sm" data-text="posttime" data-bind="desc"><em>刊登時間</em>&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-up" aria-hidden="true"></i></div>
+        <div class="sortOther btn btn-default btn-sm" data-text="area" data-bind="asc"><em>坪數</em>&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-down" aria-hidden="true"></i></div>
+        <div class="sortOther btn btn-default btn-sm" data-text="money" data-bind="asc"><em>金額</em>&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-down" aria-hidden="true"></i></div>
+        <div class="sortOther btn btn-default btn-sm" data-text="nearby" data-bind="desc" style="display: none;"><em>步行距離</em>&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-up" aria-hidden="true"></i></div>
+        <div class="sortOther btn btn-default btn-sm" data-text="arrow" data-bind="desc" style="display: none;"><em>成交時間</em>&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-up" aria-hidden="true"></i></div>
+
+    </div>
+</div>
+                
+                <div id="content">
+                                                                        <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2017/12/05/151245715840932901_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11045912" data-img-length="9" title="花蓮租屋,花蓮租屋,獨立套房出租,花蓮最美園道景觀套房，機會難得錯過不再！"  alt="花蓮租屋,花蓮租屋,獨立套房出租,花蓮最美園道景觀套房，機會難得錯過不再！">
+                                    
+                                                                            <div class="imgSort">
+                                            9
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11045912.html" target="_blank" >花蓮最美園道景觀套房，機會難得錯過不再！</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>8坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/4                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-府前路352號</em></p>
+
+                                    <p>
+                                         <em>屋主 葉小姐 </em>&nbsp;/&nbsp;                                         <em>2分鐘內更新</em>&nbsp;                                        /&nbsp;<em>1條問答</em>&nbsp;                                        /&nbsp;<em>325人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11045912" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>7,500</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2021/06/19/162411250162472302_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11035208" data-img-length="6" title="花蓮租屋,花蓮租屋,獨立套房出租,慈濟大學~1樓獨立陽台大套房新衛浴"  alt="花蓮租屋,花蓮租屋,獨立套房出租,慈濟大學~1樓獨立陽台大套房新衛浴">
+                                    
+                                                                            <div class="imgSort">
+                                            6
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11035208.html" target="_blank" >慈濟大學~1樓獨立陽台大套房新衛浴</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>10坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：1/1                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-中山路一段3巷</em></p>
+
+                                    <p>
+                                         <em>屋主 裴媽媽 </em>&nbsp;/&nbsp;                                         <em>36分鐘內更新</em>&nbsp;                                        /&nbsp;<em>2條問答</em>&nbsp;                                        /&nbsp;<em>314人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11035208" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>5,500</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2019/07/09/156267832720403103_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10954355" data-img-length="5" title="花蓮租屋,花蓮租屋,獨立套房出租,步行三分鐘到火車站，有大廈管理員"  alt="花蓮租屋,花蓮租屋,獨立套房出租,步行三分鐘到火車站，有大廈管理員">
+                                    
+                                                                            <div class="imgSort">
+                                            5
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10954355.html" target="_blank" >步行三分鐘到火車站，有大廈管理員</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>7坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：4/11                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-國聯四路</em></p>
+
+                                    <p>
+                                         <em>屋主 鄭先生 </em>&nbsp;/&nbsp;                                         <em>36分鐘內更新</em>&nbsp;                                                                                /&nbsp;<em>227人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10954355" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>4,500</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2021/01/11/161034593115798008_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11039273" data-img-length="3" title="花蓮租屋,吉安租屋,獨立套房出租,近慈科大民宿型套房"  alt="花蓮租屋,吉安租屋,獨立套房出租,近慈科大民宿型套房">
+                                    
+                                                                            <div class="imgSort">
+                                            3
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11039273.html" target="_blank" >近慈科大民宿型套房</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>8坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：3/3                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                            
+                                                太昌生活圈
+
+                                            
+                                        
+                                        <em>吉安鄉-明仁二街289號</em></p>
+
+                                    <p>
+                                         <em>屋主 許小姐 </em>&nbsp;/&nbsp;                                         <em>36分鐘內更新</em>&nbsp;                                                                                /&nbsp;<em>326人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11039273" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>7,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2021/05/01/161979863743288226_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10977795" data-img-length="15" title="花蓮租屋,吉安租屋,整層住家出租,吉安麥當勞店住出租"  alt="花蓮租屋,吉安租屋,整層住家出租,吉安麥當勞店住出租">
+                                    
+                                                                            <div class="imgSort">
+                                            15
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10977795.html" target="_blank" >吉安麥當勞店住出租</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        整層住家
+                                        <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>6房2廳4衛                                        <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>45.9坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：整棟/2                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>吉安鄉-荳蘭一街</em></p>
+
+                                    <p>
+                                         <em>仲介 曾小姐 </em>&nbsp;/&nbsp;                                         <em>36分鐘內更新</em>&nbsp;                                                                                /&nbsp;<em>116人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10977795" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>21,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2017/10/07/150733944765076404_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10950125" data-img-length="12" title="花蓮租屋,花蓮租屋,獨立套房出租,雙人慈濟套房/廚房/市場/獨立洗衣機"  alt="花蓮租屋,花蓮租屋,獨立套房出租,雙人慈濟套房/廚房/市場/獨立洗衣機">
+                                    
+                                                                            <div class="imgSort">
+                                            12
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10950125.html" target="_blank" >雙人慈濟套房/廚房/市場/獨立洗衣機</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>13坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/4                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-國富十三街</em></p>
+
+                                    <p>
+                                         <em>屋主 李小姐 </em>&nbsp;/&nbsp;                                         <em>36分鐘內更新</em>&nbsp;                                        /&nbsp;<em>3條問答</em>&nbsp;                                        /&nbsp;<em>124人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10950125" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>8,800</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2018/12/24/154558412432472708_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10965818" data-img-length="10" title="花蓮租屋,花蓮租屋,獨立套房出租,花蓮車站前全新豪華套房出租"  alt="花蓮租屋,花蓮租屋,獨立套房出租,花蓮車站前全新豪華套房出租">
+                                    
+                                                                            <div class="imgSort">
+                                            10
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10965818.html" target="_blank" >花蓮車站前全新豪華套房出租</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>11坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/5                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                            
+                                                璽鈺之星
+
+                                            
+                                        
+                                        <em>花蓮市-國興二街</em></p>
+
+                                    <p>
+                                         <em>屋主 邱先生 </em>&nbsp;/&nbsp;                                         <em>36分鐘內更新</em>&nbsp;                                                                                /&nbsp;<em>195人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10965818" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>10,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2021/05/31/162239243674421999_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10952157" data-img-length="6" title="花蓮租屋,花蓮租屋,分租套房出租,站前溫馨套房6000元起"  alt="花蓮租屋,花蓮租屋,分租套房出租,站前溫馨套房6000元起">
+                                    
+                                                                            <div class="imgSort">
+                                            6
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10952157.html" target="_blank" >站前溫馨套房6000元起</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        分租套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>8坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/5                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-國民十二街30號</em></p>
+
+                                    <p>
+                                         <em>代理人 謝小姐 </em>&nbsp;/&nbsp;                                         <em>2小時內更新</em>&nbsp;                                                                                /&nbsp;<em>198人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10952157" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>6,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2017/12/07/151262509651616403_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10986452" data-img-length="9" title="花蓮租屋,新城租屋,分租套房出租,花蓮溫馨套房出租"  alt="花蓮租屋,新城租屋,分租套房出租,花蓮溫馨套房出租">
+                                    
+                                                                            <div class="imgSort">
+                                            9
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10986452.html" target="_blank" >花蓮溫馨套房出租</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        分租套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>8坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/2                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>新城鄉-嘉里二路89號</em></p>
+
+                                    <p>
+                                         <em>屋主 魏先生 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>135人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10986452" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>5,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2020/11/20/160583872158551232_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11045334" data-img-length="3" title="花蓮租屋,花蓮租屋,獨立套房出租,市區獨立套房有陽台（近花商、85度c."  alt="花蓮租屋,花蓮租屋,獨立套房出租,市區獨立套房有陽台（近花商、85度c.">
+                                    
+                                                                            <div class="imgSort">
+                                            3
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11045334.html" target="_blank" >市區獨立套房有陽台（近花商、85度c.</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>9坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/4                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-延平街148巷</em></p>
+
+                                    <p>
+                                         <em>屋主 羅小姐 </em>&nbsp;/&nbsp;                                         <em>8小時內更新</em>&nbsp;                                                                                /&nbsp;<em>411人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11045334" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>6,500</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2021/06/22/162433388810230001_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11043668" data-img-length="13" title="花蓮租屋,花蓮租屋,分租套房出租,洄瀾地產【近花商全新套房6500起】"  alt="花蓮租屋,花蓮租屋,分租套房出租,洄瀾地產【近花商全新套房6500起】">
+                                    
+                                                                            <div class="imgSort">
+                                            13
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11043668.html" target="_blank" >洄瀾地產【近花商全新套房6500起】</a>
+                                                                                    <span class="labelOne">黄金曝光</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        分租套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>5坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：3/5                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-商校街184號</em></p>
+
+                                    <p>
+                                         <em>仲介 李先生 </em>&nbsp;/&nbsp;                                         <em>36分鐘內更新</em>&nbsp;                                                                                /&nbsp;<em>533人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11043668" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>6,500</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2019/08/09/156536623091184400_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10955875" data-img-length="7" title="花蓮租屋,吉安租屋,獨立套房出租,自強路全新電梯獨立套房"  alt="花蓮租屋,吉安租屋,獨立套房出租,自強路全新電梯獨立套房">
+                                    
+                                                                            <div class="imgSort">
+                                            7
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10955875.html" target="_blank" >自強路全新電梯獨立套房</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>6.5坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/5                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>吉安鄉-自強路113號</em></p>
+
+                                    <p>
+                                         <em>代理人 李小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>195人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10955875" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>6,500</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2012/12/10/135511050980864004_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10923615" data-img-length="8" title="花蓮租屋,花蓮租屋,獨立套房出租,電梯獨立套房(近花蓮火車站)"  alt="花蓮租屋,花蓮租屋,獨立套房出租,電梯獨立套房(近花蓮火車站)">
+                                    
+                                                                            <div class="imgSort">
+                                            8
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10923615.html" target="_blank" >電梯獨立套房(近花蓮火車站)</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>8坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/5                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-國聯四路</em></p>
+
+                                    <p>
+                                         <em>代理人 許小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                        /&nbsp;<em>8條問答</em>&nbsp;                                        /&nbsp;<em>106人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10923615" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>6,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2015/05/11/143134161935436406_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10969058" data-img-length="5" title="花蓮租屋,吉安租屋,獨立套房出租,二樓套房出租,短期可或長期整樓,"  alt="花蓮租屋,吉安租屋,獨立套房出租,二樓套房出租,短期可或長期整樓,">
+                                    
+                                                                            <div class="imgSort">
+                                            5
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10969058.html" target="_blank" >二樓套房出租,短期可或長期整樓,</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>17坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/4                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>吉安鄉-舊村六街95號</em></p>
+
+                                    <p>
+                                         <em>屋主 陳小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>169人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10969058" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>7,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2015/11/03/144656360879383204_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11036448" data-img-length="13" title="花蓮租屋,花蓮租屋,整層住家出租,一棟8房優質房屋出粗(附車庫傢俱)"  alt="花蓮租屋,花蓮租屋,整層住家出租,一棟8房優質房屋出粗(附車庫傢俱)">
+                                    
+                                                                            <div class="imgSort">
+                                            13
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11036448.html" target="_blank" >一棟8房優質房屋出粗(附車庫傢俱)</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        整層住家
+                                        <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>8房1廳3衛                                        <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>105坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：整棟/3                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-豐村9號</em></p>
+
+                                    <p>
+                                         <em>屋主 張太太 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>141人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11036448" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>28,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2021/06/22/162435532643054701_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11026968" data-img-length="4" title="花蓮租屋,花蓮租屋,獨立套房出租,花蓮短租/包水電/車站大套房"  alt="花蓮租屋,花蓮租屋,獨立套房出租,花蓮短租/包水電/車站大套房">
+                                    
+                                                                            <div class="imgSort">
+                                            4
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11026968.html" target="_blank" >花蓮短租/包水電/車站大套房</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>8坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：3/4                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-國聯三路</em></p>
+
+                                    <p>
+                                         <em>屋主 劉先生 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>246人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11026968" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>10,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2021/06/01/162252024159423701_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10966959" data-img-length="9" title="花蓮租屋,花蓮租屋,分租套房出租,近車站👍休閒精緻套房🏠可周租"  alt="花蓮租屋,花蓮租屋,分租套房出租,近車站👍休閒精緻套房🏠可周租">
+                                    
+                                                                            <div class="imgSort">
+                                            9
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10966959.html" target="_blank" >近車站👍休閒精緻套房🏠可周租</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        分租套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>5坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/8                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-國聯一路201號</em></p>
+
+                                    <p>
+                                         <em>屋主 顏先生 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                        /&nbsp;<em>2條問答</em>&nbsp;                                        /&nbsp;<em>53人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10966959" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>12,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2021/06/24/162452494665861209_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11052320" data-img-length="15" title="花蓮租屋,吉安租屋,整層住家出租,宜昌國中裝潢透天2房"  alt="花蓮租屋,吉安租屋,整層住家出租,宜昌國中裝潢透天2房">
+                                    
+                                                                            <div class="imgSort">
+                                            15
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11052320.html" target="_blank" >宜昌國中裝潢透天2房</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        整層住家
+                                        <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>2房2廳2衛                                        <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>27.6坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：整棟/2                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>吉安鄉-仁里十四街4號</em></p>
+
+                                    <p>
+                                         <em>屋主 林小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11052320" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>15,000</i> 元/月
+
+                                </div>
+
+                                                                                                    <div class="newArticle"></div>
+                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2018/12/09/154433404479958701_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11045675" data-img-length="10" title="花蓮租屋,吉安租屋,分租套房出租,北昌分租套房一房一廳*請來電預"  alt="花蓮租屋,吉安租屋,分租套房出租,北昌分租套房一房一廳*請來電預">
+                                    
+                                                                            <div class="imgSort">
+                                            10
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11045675.html" target="_blank" >北昌分租套房一房一廳*請來電預</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        分租套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>9坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：5/5                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>吉安鄉-壽昌街29巷</em></p>
+
+                                    <p>
+                                         <em>屋主 鄭小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>206人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11045675" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>7,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2016/06/09/146545847354697502_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11002946" data-img-length="13" title="花蓮租屋,花蓮租屋,分租套房出租,慈濟大學優質套房出租"  alt="花蓮租屋,花蓮租屋,分租套房出租,慈濟大學優質套房出租">
+                                    
+                                                                            <div class="imgSort">
+                                            13
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11002946.html" target="_blank" >慈濟大學優質套房出租</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        分租套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>5坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：1/2                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-國富二十街</em></p>
+
+                                    <p>
+                                         <em>屋主 曾小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>162人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11002946" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>4,600</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2020/08/05/159659330320232809_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11030134" data-img-length="15" title="花蓮租屋,吉安租屋,獨立套房出租,吉安寶雅旁套房出租"  alt="花蓮租屋,吉安租屋,獨立套房出租,吉安寶雅旁套房出租">
+                                    
+                                                                            <div class="imgSort">
+                                            15
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11030134.html" target="_blank" >吉安寶雅旁套房出租</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>10坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/3                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                            
+                                                臻品
+
+                                            
+                                        
+                                        <em>吉安鄉-昌隆二街123巷11號</em></p>
+
+                                    <p>
+                                         <em>仲介 鄭先生 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                        /&nbsp;<em>1條問答</em>&nbsp;                                        /&nbsp;<em>280人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11030134" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>6,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2021/06/20/162415991769410402_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="8798967" data-img-length="5" title="花蓮租屋,吉安租屋,獨立套房出租,北昌活動中心附近近慈濟大學交通便利機能佳"  alt="花蓮租屋,吉安租屋,獨立套房出租,北昌活動中心附近近慈濟大學交通便利機能佳">
+                                    
+                                                                            <div class="imgSort">
+                                            5
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-8798967.html" target="_blank" >北昌活動中心附近近慈濟大學交通便利機能佳</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>14坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：4/4                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>吉安鄉-建昌路40號</em></p>
+
+                                    <p>
+                                         <em>屋主 徐先生.徐太太 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>284人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="8798967" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>5,800</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2021/06/19/162408134143718508_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11033405" data-img-length="6" title="花蓮租屋,花蓮租屋,獨立套房出租,全新整理市區、電梯、獨立門牌、山景大套房"  alt="花蓮租屋,花蓮租屋,獨立套房出租,全新整理市區、電梯、獨立門牌、山景大套房">
+                                    
+                                                                            <div class="imgSort">
+                                            6
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11033405.html" target="_blank" >全新整理市區、電梯、獨立門牌、山景大套房</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>8坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：7/9                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                            
+                                                金鑽大樓
+
+                                            
+                                        
+                                        <em>花蓮市-中華路212號</em></p>
+
+                                    <p>
+                                         <em>屋主 陳小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>181人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11033405" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>7,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2014/09/15/141076277910048106_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11028105" data-img-length="10" title="花蓮租屋,花蓮租屋,獨立套房出租,民宿級套房，近後車站、慈濟醫院、大賣場"  alt="花蓮租屋,花蓮租屋,獨立套房出租,民宿級套房，近後車站、慈濟醫院、大賣場">
+                                    
+                                                                            <div class="imgSort">
+                                            10
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11028105.html" target="_blank" >民宿級套房，近後車站、慈濟醫院、大賣場</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>15坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：3/4                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-中山路</em></p>
+
+                                    <p>
+                                         <em>屋主 張小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>232人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11028105" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>7,300</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2021/03/01/161460086059209208_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10966087" data-img-length="13" title="花蓮租屋,花蓮租屋,分租套房出租,慈濟大學走路一分鐘套房出租(禁菸物件)"  alt="花蓮租屋,花蓮租屋,分租套房出租,慈濟大學走路一分鐘套房出租(禁菸物件)">
+                                    
+                                                                            <div class="imgSort">
+                                            13
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10966087.html" target="_blank" >慈濟大學走路一分鐘套房出租(禁菸物件)</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        分租套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>6坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：1/3                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-中央路三段770號</em></p>
+
+                                    <p>
+                                         <em>屋主 黃先生 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>94人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10966087" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>5,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2021/06/02/162259172373783516_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="7753976" data-img-length="6" title="花蓮租屋,花蓮租屋,獨立套房出租,海景大套房環境優美生活機能優"  alt="花蓮租屋,花蓮租屋,獨立套房出租,海景大套房環境優美生活機能優">
+                                    
+                                                                            <div class="imgSort">
+                                            6
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-7753976.html" target="_blank" >海景大套房環境優美生活機能優</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>14坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：4/10                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                            
+                                                美崙
+
+                                            
+                                        
+                                        <em>花蓮市-中興路6號</em></p>
+
+                                    <p>
+                                         <em>屋主 鄧小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>150人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="7753976" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>8,000</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2017/11/13/151054829556475304_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="5789887" data-img-length="4" title="花蓮租屋,新城租屋,整層住家出租,乾淨兩房的平房可炊近海星中學"  alt="花蓮租屋,新城租屋,整層住家出租,乾淨兩房的平房可炊近海星中學">
+                                    
+                                                                            <div class="imgSort">
+                                            4
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-5789887.html" target="_blank" >乾淨兩房的平房可炊近海星中學</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        整層住家
+                                        <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>2房1廳1衛                                        <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>23坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：整棟/1                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>新城鄉-嘉南路45巷</em></p>
+
+                                    <p>
+                                         <em>屋主 陳小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                        /&nbsp;<em>2條問答</em>&nbsp;                                        /&nbsp;<em>303人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="5789887" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>7,500</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2021/06/07/162304371111100129_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10971684" data-img-length="6" title="花蓮租屋,花蓮租屋,整層住家出租,房間採光超級無敵"  alt="花蓮租屋,花蓮租屋,整層住家出租,房間採光超級無敵">
+                                    
+                                                                            <div class="imgSort">
+                                            6
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10971684.html" target="_blank" >房間採光超級無敵</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        整層住家
+                                        <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>2房2廳2衛                                        <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>37坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：7/7                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                            
+                                                東方巴黎
+
+                                            
+                                        
+                                        <em>花蓮市-富安路147號</em></p>
+
+                                    <p>
+                                         <em>屋主 陳小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                        /&nbsp;<em>1條問答</em>&nbsp;                                        /&nbsp;<em>91人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10971684" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>13,500</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp1.591.com.tw/house/active/2021/06/02/162262389119255133_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="10972743" data-img-length="5" title="花蓮租屋,花蓮租屋,獨立套房出租,北興路獨立套房（獨立電表）"  alt="花蓮租屋,花蓮租屋,獨立套房出租,北興路獨立套房（獨立電表）">
+                                    
+                                                                            <div class="imgSort">
+                                            5
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-10972743.html" target="_blank" >北興路獨立套房（獨立電表）</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>6坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：3/4                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-北興路</em></p>
+
+                                    <p>
+                                         <em>屋主 冀小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>108人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="10972743" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>4,800</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                    <ul class="listInfo clearfix ">
+                                <li class="pull-left imageBox">
+                                        <img src="//images.591.com.tw/index/house/newVersion/newlazy.gif" data-original="https://hp2.591.com.tw/house/active/2017/08/19/150315633556535309_210x158.crop.jpg" class="boxImg lazy" width="210" height="158" data-bind="11000804" data-img-length="12" title="花蓮租屋,花蓮租屋,獨立套房出租,電梯高級套房,帶著衣物即可入住!"  alt="花蓮租屋,花蓮租屋,獨立套房出租,電梯高級套房,帶著衣物即可入住!">
+                                    
+                                                                            <div class="imgSort">
+                                            12
+                                        </div>
+                                                                    </li>
+                                <li class="pull-left infoContent">
+                                    <h3>
+                                        <a href="//rent.591.com.tw/rent-detail-11000804.html" target="_blank" >電梯高級套房,帶著衣物即可入住!</a>
+                                                                                    <span class="labelThree">VIP</span>
+                                        
+                                                                            </h3>
+                                    <p class="lightBox">
+                                        獨立套房
+                                                                                <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>6坪                                         <i>&nbsp;&nbsp;|&nbsp;&nbsp;</i>樓層：2/4                                    </p>
+                                    <p class="lightBox">
+
+                                        
+                                        <em>花蓮市-富祥街166號</em></p>
+
+                                    <p>
+                                         <em>屋主 侯小姐 </em>&nbsp;/&nbsp;                                         <em>4小時內更新</em>&nbsp;                                                                                /&nbsp;<em>186人瀏覽</em>&nbsp;
+                                                                                    <b class="showyestoday"></b>
+                                                                            </p>
+
+                                    <span class="shoucang"><a data-text="11000804" data-bind="0" href="javascript:;" title="收藏"></a></span>
+
+                                </li>
+                                <div class="price"><i>7,500</i> 元/月
+
+                                </div>
+
+                                                                                            </ul>
+                                                            </div>
+
+                <!--分页-->
+                <div class="page-limit">
+                    <div class="pageBar">
+                                                    <a class="pagePrev first"><span>上一頁</span></a><span class="pageCurrent">1</span><a class="pageNum-form" href="javascript:;"  data-first="30" data-total="215" >2</a><a class="pageNum-form" href="javascript:;"  data-first="60" data-total="215" >3</a><a class="pageNum-form" href="javascript:;"  data-first="90" data-total="215" >4</a><a class="pageNum-form" href="javascript:;"  data-first="120" data-total="215" >5</a><a class="pageNum-form" href="javascript:;"  data-first="150" data-total="215" >6</a><a class="pageNum-form" href="javascript:;"  data-first="210" data-total="215" >8</a><a href="javascript:;" data-first="30" data-total="215"  class="pageNext"><span>下一頁</span></a><span class="TotalRecord">  共 <span class="R">215 </span>筆</span>                                            </div>
+                </div>
+
+            </div>
+            <div class="listRight">
+                <div class="publishBtn" >
+                                            <a href="//www.591.com.tw/index.php?module=house&action=postFirst&type=rent" target="_blank" google-data-stat="新版出租_列表_刊登出租按鈕">刊登出租</a>
+                                    </div>
+
+                <div class="listRight-fixed-wrapper">
+                    <div class="listRight-ad" id="listRightAd">
+                    </div>
+                    <!--推荐物件-->
+                    <style>
+    .recommendList .ellipsis {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+</style>
+
+<div class="recommendList"
+
+	style="display:none;"
+
+>
+    <h4 class="clearfix">推薦物件</h4>
+    <ul class="articleList clearfix" id="recommendList">
+        
+    </ul>
+</div>
+                    
+                    <div id="vue-news-entry">
+                        
+                        <news-hign-concern :env="env" channel="rent" position="list-news"></news-hign-concern>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <div class="clearfix"></div>
+            <div id="UNION_23" class="union23 union_responsive"></div>
+        </div>
+    </section>
+
+    <!--縮略圖-->
+    <div zid="1813241" style="display: none" id="photoViewer" class="photoex">
+        <div id="photoMain">
+            <a target="_blank" id="photoMainLink" href="rent-detail-1813241.html">
+                <img src="//s.591.com.tw/build/static/public/list/images/loading.gif" id="mainphotoloader" style="display: none;">
+                <img width="400" height="290" id="photoMainImg" src="https://s.591.com.tw/static/public/list/images/loading.gif" alt="">
+            </a>
+        </div>
+        <div class="minithumbs">
+            <div class="viewmore">
+                <ul class="carrot">
+                    <li></li>
+                </ul>
+            </div>
+            <div class="minithumbList"></div>
+        </div>
+    </div>
+    <!--列表頁結束-->
+
+    <input type="hidden" id="hid_rootUrl" value="">
+    <input type="hidden" id="hid_isRewrite" value="rentnew">
+    <input type="hidden" id="hid_domain" value="rent">
+    <input type="hidden" id="hid_type" value="1">
+    <input type="hidden" id="hid_kind" value="0">
+    <input type="hidden" id="hid_sendKind" value="0">
+    <input type="hidden" id="hid_sort" value="">
+    <input type="hidden" id="hid_initLimit" value='{"region":{"val":"1","txt":"\u53f0\u5317\u5e02"},"orderType":{"val":"desc","txt":""}}' />
+    <input type="hidden" id="hid_search_obj" value="{&quot;school&quot;:&quot;&quot;,&quot;busness&quot;:&quot;&quot;,&quot;mrt&quot;:&quot;&quot;,&quot;mrtline&quot;:&quot;&quot;,&quot;mrtcoods&quot;:&quot;&quot;,&quot;region&quot;:&quot;23&quot;,&quot;section&quot;:&quot;&quot;,&quot;kind&quot;:&quot;0&quot;,&quot;rentprice&quot;:&quot;&quot;,&quot;rentpriceMore&quot;:&quot;&quot;,&quot;pattern&quot;:&quot;&quot;,&quot;patternMore&quot;:&quot;&quot;,&quot;area&quot;:&quot;&quot;,&quot;shape&quot;:&quot;&quot;,&quot;floor&quot;:&quot;&quot;,&quot;sex&quot;:&quot;&quot;,&quot;option&quot;:&quot;&quot;,&quot;other&quot;:&quot;&quot;,&quot;hasimg&quot;:&quot;&quot;,&quot;not_cover&quot;:&quot;&quot;,&quot;role&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;shType&quot;:&quot;&quot;}">
+    <input type="hidden" id="businessUrl" value="//business.591.com.tw">
+    <input type="hidden" id="JKB" value="tw591-出租">
+    <input type="hidden" id="c_regionid" value="">
+    <input type="hidden" id="c_sectionid" value="">
+    <input type="hidden" id="c_kind" value="">
+    <input type="hidden" id="c_rentprice" value="">
+    <input type="hidden" id="base_url" value="//www.591.com.tw">
+    <input type="hidden" id="rent_url" value="//rent.591.com.tw">
+    <input type="hidden" id="favNum" value="0">
+    <input type="hidden" id="hid_role" value="">
+    <input type="hidden" id="hid_version" value="2">
+
+    <!-- 显示社会住宅的id -->
+            <input type="hidden" id="hid_social_region" value="1,3,6,7,8,15,17,2,4,5,12,13,19,21,23">
+    
+
+
+    <!--底部SEO鏈接開始-->
+    <section class="seoNav">
+    <div class="seoLink">
+    <p class="clearfix">
+    	<span class="fcGry">租屋相關資訊：</span>
+
+    	<a href="//rent.591.com.tw/?type=1&kind=1">整層住家</a>
+        <a href="//rent.591.com.tw/?type=1&kind=2">獨立套房</a>
+        <a href="//rent.591.com.tw/?type=1&kind=3">分租套房</a>
+        <a href="//rent.591.com.tw/?type=1&kind=4">雅房</a>
+        <a href="//rent.591.com.tw/?type=1&kind=24">其他</a>
+
+    </p>
+    <p class="clearfix changRegion" ><span class="fc-gry">熱門縣市租屋：</span>
+                <a data-text="1" data-bind="1" data-value="0" href="javascript:;">台北市</a>
+            <a data-text="3" data-bind="1" data-value="0" href="javascript:;">新北市</a>
+            <a data-text="8" data-bind="1" data-value="0" href="javascript:;">台中市</a>
+            <a data-text="6" data-bind="1" data-value="0" href="javascript:;">桃園市</a>
+            <a data-text="17" data-bind="1" data-value="0" href="javascript:;">高雄市</a>
+            <a data-text="15" data-bind="1" data-value="0" href="javascript:;">台南市</a>
+            <a data-text="4" data-bind="1" data-value="0" href="javascript:;">新竹市</a>
+            <a data-text="5" data-bind="1" data-value="0" href="javascript:;">新竹縣</a>
+            <a data-text="7" data-bind="1" data-value="0" href="javascript:;">苗栗縣</a>
+            <a data-text="2" data-bind="1" data-value="0" href="javascript:;">基隆市</a>
+            <a data-text="10" data-bind="1" data-value="0" href="javascript:;">彰化縣</a>
+            <a data-text="12" data-bind="1" data-value="0" href="javascript:;">嘉義市</a>
+            <a data-text="21" data-bind="1" data-value="0" href="javascript:;">宜蘭縣</a>
+            <a data-text="23" data-bind="1" data-value="0" href="javascript:;">花蓮縣</a>
+            <a data-text="19" data-bind="1" data-value="0" href="javascript:;">屏東縣</a>
+            <a data-text="14" data-bind="1" data-value="0" href="javascript:;">雲林縣</a>
+            <a data-text="13" data-bind="1" data-value="0" href="javascript:;">嘉義縣</a>
+            <a data-text="11" data-bind="1" data-value="0" href="javascript:;">南投縣</a>
+            <a data-text="22" data-bind="1" data-value="0" href="javascript:;">台東縣</a>
+            <a data-text="25" data-bind="1" data-value="0" href="javascript:;">金門縣</a>
+            <a data-text="24" data-bind="1" data-value="0" href="javascript:;">澎湖縣</a>
+            <a data-text="26" data-bind="1" data-value="0" href="javascript:;">連江縣</a>
+            </div>
+</section>
+<!--seo优化-->
+<h1 style="display: none;">【花蓮縣出租】-591房屋交易網</h1>
+    </div>
+
+    
+        
+    <div id="footer">
+    <div class="footnav">
+        <div class="grouplink border ellipsis">
+            <a href="//www.addcn.com.tw/investment-basic.html" class="first" target="_blank">投資者專區</a>
+            <a href="//www.addcn.com/about-info.html">關於我們</a>
+            <a href="//www.591.com.tw/advertisement">廣告刊登</a>
+            <a href="//www.591.com.tw/links.html">交換連結</a>
+            <a href="//www.591.com.tw/message-moremessage.html?titleType=news">新聞剪輯</a>
+            <a href="//www.addcn.com.tw/social-welfare2012.html" target="_blank">社會公益</a>
+            <a href="//591.com.tw/yU0">免責聲明</a>
+            <a href="//591.com.tw/yUY">服務條款</a>
+            <a href="//591.com.tw/yUW">隱私權聲明</a>
+            <a href="http://www.8591.com.tw/dealer.php" target="_blank">數字經銷商</a>
+        </div>
+        <div class="grouplink">
+            <a href="//rent.591.com.tw" target="_blank">591租屋</a>
+            <a href="//sale.591.com.tw" target="_blank">591中古屋</a>
+            <a href="//newhouse.591.com.tw" target="_blank">591新建案</a>
+            <a href="//news.591.com.tw" target="_blank">591新聞</a>
+            <a href="//market.591.com.tw" target="_blank">591實價登錄</a>
+            <a href="//www.591.com.hk" target="_blank">香港591房屋交易網</a>
+            <a href="//design.591.com.tw/?aid=1169" target="_blank">100室內設計</a>
+            <a href="//www.8591.com.tw" target="_blank">台灣8591寶物交易網</a>
+            <a href="//www.8591.com.hk" target="_blank" class="noline">香港8591寶物交易網</a><br/>
+            <a href="//www.8891.com.tw/" target="_blank">8891汽車交易網</a>
+            <a href="//www.518.com.tw/" target="_blank">518熊班</a>
+            <a href="//www.tasker.com.tw/" target="_blank" google-data-stat="新版底部_Tasker出任務_1">Tasker出任務</a>
+            <a href="//www.chickpt.com.tw/" data-gtm-stat="新版底部_小雞上工_1" target="_blank">小雞上工</a>
+        </div>
+        <!-- <div class="fc-gray">
+            客服信箱：<a href="mailto:service@591.com.tw">service@591.com.tw</a>　客服電話：02-55722000　(服務時間：週一至週日 9:00-18:00 )
+        </div> -->
+
+        <div class="copyright">Copyright &copy; 2007-2021 by Addcn Technology Co., Ltd. All Rights reserved.</div>
+
+    </div>
+</div>
+
+    
+    <link rel="stylesheet" href="//s.591.com.tw/build/static/public/component/newSideTool.css?v=bded01a8d7">
+
+<!-- 側邊工具欄 -->
+<div class="side_tool_wrap newFiexdSide">
+    <div class="side_tool">
+        <ul class="">
+            <li>
+                <a href="javascript:;" class="historyList" google-data-stat="公共部分_工具欄_歷史記錄"></a>
+                <div class="side-show side-txt historyList cursor"><i></i>歷史記錄</div>
+            </li>
+            <li>
+                <a href="javascript:;" class="collectionList" google-data-stat="公共部分_工具欄_收藏記錄"></a>
+                <div class="side-show side-txt collectionList cursor"><i></i>收藏記錄</div>
+            </li>
+            <li id="aso">
+                <a href="javascript:;" class="qrcode"data-gtm-stat="公共部分_工具欄_下載591APP"></a>
+                <div class="side-show side_img">
+                    <div class="side-aso-desc">
+                        <span id="aso-desc-title" class="">
+                                                    APP即時通訊
+                        </span>
+
+                        <span id="aso-desc-title2">
+                                                    租屋不用等
+                        </span>
+                    </div>
+                    <div class="side-aso-img">
+                        <div class="side-aso-img-left">
+                            <div id="downloadAppApple" class="side-aso-img-apple" onClick="window.open('https://www.591.com.tw/home/tools/app/ios')" data-gtm-stat="公共部分_工具欄_右侧-IOS">
+                                <img src="//s.591.com.tw/build/static/public/component/images/apple@1x.png" width="30" height="30" alt="下載591APP">
+                                <span>App Store</span>
+                            </div>
+                            <div id="downloadAppGoogle" class="side-aso-img-google" onClick="window.open('https://www.591.com.tw/home/tools/app/android?id=com.addcn.android.house591&referrer=utm_source%3Dpc_Rentindex_right%26anid%3Dadmob')" data-gtm-stat="公共部分_工具欄_右侧-Android">
+                                <img src="//s.591.com.tw/build/static/public/component/images/googlepaly@1x.png" width="30" height="30" alt="下載591APP">
+                                <span>Google Play</span>
+                            </div>
+                        </div>
+                        <div class="side-aso-img-right">
+                            <img id="downloadCode" src="//s.591.com.tw/build/static/public/component/images/rentDetail.png" width="90" height="90" alt="下載591APP">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;" class="proposal" google-data-stat="公共部分_工具欄_意見反饋"></a>
+                <div class="side-show side-txt proposal cursor"><i></i>意見反饋</div>
+            </li>
+            <li class="js-onlineService">
+                <a href="javascript:;" class="online" google-data-stat="公共部分_工具欄_在線客服"></a>
+                <div class="side-show side-txt online cursor"><i></i>在線客服</div>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/tw591?bid=1070" target="_blank" class="facebook" id="facebook" google-data-stat="公共部分_工具欄_加入粉絲團"></a>
+                <div class="side-show side-txt cursor" onClick="document.getElementById('facebook').click();"><i></i>加入粉絲團</div>
+            </li>
+            <li>
+                <a href="javascript:;" class="addCollec" google-data-stat="公共部分_工具欄_加入收藏"></a>
+                <div class="side-show side-txt addCollec cursor"><i></i>加入收藏</div>
+            </li>
+        </ul>
+        <ul style="position: fixed; bottom: 12%;">
+            <li>
+                <a href="javascript:;" class="backtop" style="display: none;" google-data-stat="公共部分_工具欄_返回頂部"></a>
+                <div class="side-show side-txt"><i></i>返回頂部</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 列表(收藏列表 & 浏览历史列表)容器 -->
+<div class="record-body">
+    <div class="record-wrap">
+        <div class="record-container">
+            <div class="record-header">
+                <span class="record-title"></span>
+                <i class="record-close">
+                    <img src="//s.591.com.tw/build/static/index/images/historyClose.png" alt="">
+                </i>
+            </div>
+            <div class="record-tab">
+                <div class="record-tab-rent record-tab-item record-tab-on">出租</div>
+                <div class="record-tab-sale record-tab-item">中古屋</div>
+                <div class="record-tab-newhouse record-tab-item">新建案</div>
+            </div>
+            <div class="record-list" id="record-list">
+            </div>
+            <div class="record-bottom">
+            </div>
+            <a href="/user-login.html" class="record-colle-bottom">
+            </a>
+        </div>
+        <div class="record-empty">
+            <div class="record-empty-img">
+                <img src="//s.591.com.tw/build/static/index/images/colleEmpty.png" alt="">
+            </div>
+            <div class="record-empty-txt">您還沒有瀏覽記錄唷</div>
+            <div class="record-empty-close">關閉</div>
+        </div>
+        <div class="record-colle-empty">
+            <div class="colle-empty-img">
+                <img src="//s.591.com.tw/build/static/index/images/colleEmpty.png" alt="">
+            </div>
+            <div class="colle-empty-txt">您還沒有收藏物件哦</div>
+            <div class="colle-empty-close">關閉</div>
+        </div>
+    </div>
+</div>
+	
+</body>
+</html>
